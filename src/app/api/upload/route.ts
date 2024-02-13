@@ -15,6 +15,7 @@ export async function POST(req: NextApiRequest) {
     const path=`./public/${file.name}`
     await writeFile(path,buffer);
     return NextResponse.json({"message":"file uploaded",sucess:true})
+    
 
 
     
